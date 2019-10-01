@@ -1,20 +1,20 @@
 # MercadoLibre Data Challenge 2019
 
-[https://ml-challenge.mercadolibre.com/]
+[https://ml-challenge.mercadolibre.com/](MeLi 2019)
 
 Best Model:
 
-- Keras with Tensorflow 2.0
 - Two part neural network: nnlm embeddings + multi layer perceptron
 - Phrase embeddings with Tensorflow hub:
 	- Neural Network Language Model NNLM embeddings, spanish, 128 dimensions with normalization [https://tfhub.dev/google/tf2-preview/nnlm-es-dim128-with-normalization/1](tfhub)
-	- 2 hidden layer MLP [2048, 2048], one intermediate input for the language class ("sp" or "po")
+- 2 hidden layer MLP [2048, 2048], one intermediate input for the language class ("sp" or "po")
 	- The embeddings layer is trained along with the MLP
-	- Trained with the full 20M dataset in:
-		- About 1 hour on a p3.2xlarge instance in AWS
-		- About 2 hours on a p2.xlarge instance in AWS
-		- About 24 hours on a GTX960M GPU
-		- *Would train for some 52 hours on a Macbook pro 2015 CPU*
+- Trained with the full 20M dataset in:
+	- About 1 hour on a p3.2xlarge instance in AWS
+	- About 2 hours on a p2.xlarge instance in AWS
+	- About 24 hours on a GTX960M GPU
+	- *Would train for some 52 hours on a Macbook pro 2015 CPU*
+- Keras with Tensorflow 2.0
 
 **Really cool finding: the spanish language model can be trained with portuguese features and reach a similar BAC**
 
@@ -48,13 +48,14 @@ Total params: 132,701,264
 Trainable params: 132,701,264
 Non-trainable params: 0
 __________________________________________________________________________________________________
+
 ```
 
-Check final model in [analysis/meli-TFH-v3.py](plain python). For the final submission the model was trained twice, once in spanish and once in portuguese and predictions were merge accordingly.
+Check final model in [plain python](./analysis/meli-TFH-v3.py) or jupyter notebook. For the final submission the model was trained twice, once in spanish and once in portuguese and predictions were merge accordingly.
 
 Hope to put other models tested and jupyter notebooks soon.
 
 I'm pretty happy with the final score 0.8789 which is far from first places but uses a quite simple model.
 
-![leadeboard][leaderboard-2019-09-30_22-32.png]
+![leadeboard](leaderboard-2019-09-30_22-32.png)
 
