@@ -1,12 +1,12 @@
 # MercadoLibre Data Challenge 2019
 
-[https://ml-challenge.mercadolibre.com/](MeLi 2019)
+[https://ml-challenge.mercadolibre.com](MeLi 2019)
 
 Best Model:
 
 - Two part neural network: nnlm embeddings + multi layer perceptron
 - Phrase embeddings with Tensorflow hub:
-	- Neural Network Language Model NNLM embeddings, spanish, 128 dimensions with normalization [https://tfhub.dev/google/tf2-preview/nnlm-es-dim128-with-normalization/1](tfhub)
+	- Neural Network Language Model NNLM embeddings, spanish, 128 dimensions with normalization [tfhub](https://tfhub.dev/google/tf2-preview/nnlm-es-dim128-with-normalization/1)
 - 2 hidden layer MLP [2048, 2048], one intermediate input for the language class ("sp" or "po")
 	- The embeddings layer is trained along with the MLP
 - Trained with the full 20M dataset in:
