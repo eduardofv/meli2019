@@ -1,6 +1,6 @@
 # MercadoLibre Data Challenge 2019
 
-[https://ml-challenge.mercadolibre.com](MeLi 2019)
+[MeLi 2019](https://ml-challenge.mercadolibre.com)
 
 Best Model:
 
