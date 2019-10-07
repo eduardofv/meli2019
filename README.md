@@ -1,6 +1,6 @@
 # MercadoLibre Data Challenge 2019
 
-[MeLi 2019](https://ml-challenge.mercadolibre.com)
+[MeLi 2019](https://ml-challenge.mercadolibre.com) - [Blog Post](http://eduardofv.com/2019/10/04/meli-data-challenge-2019-multiclass-classification-in-keras/)
 
 Best Model:
 
