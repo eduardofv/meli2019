@@ -18,6 +18,10 @@ Best Model:
 
 **Really cool finding: the spanish language model can be trained with portuguese features and reach a similar BAC**
 
+### Model in Colab
+
+Check the model and try it by yourself on this [Google Colab](https://colab.research.google.com/drive/1F9ULSVtsHEGamPKtXp5oMjU5Z_mNMBnH)
+
 ### Model Summary
 
 ```
